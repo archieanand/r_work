@@ -1,5 +1,5 @@
 #Linear regression model
-#read filev
+#read file
 challenge_table <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
 #perform linear regression
 lm(mpg ~ `vehicle length` + `vehicle weight` + `spoiler angle` + `ground clearance` + AWD,data=challenge_table)
@@ -15,3 +15,6 @@ suspension_table <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsF
 variance = var(psi)
 standard_deviation = sd(psi)
 summarize_suspension <- suspension_table %>% group_by(VehicleID) %>% summarize(Mean=mean(PSI),Median=median(PSI),variance=variance,sd=standard_deviation)
+
+#comparing psi to population
+t.test(log10(suspension_table$PSI),mu=mean(log10(population_table$Miles_Driven)))
