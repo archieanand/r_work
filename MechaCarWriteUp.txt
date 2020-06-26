@@ -1,0 +1,24 @@
+Linear Regression:
+Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+In the statistical summary, vehicle weight, spoiler angle, and AWD provided a non-random amount of variance, while values for vwhicle length and ground clearance were very low (5.08xe^11 & 5.21xe^8).
+Is the slope of the linear model considered to be zero? Why or why not?
+No. The p value is 5.35 x e^-11, which is a lot smaller than the significance level of .05
+Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+I believe the linear model does an ok job at predicting mpg because the multiple r-squared value is 0.71, meaning 71% of the time it is correct.
+
+Suspension Coil Summary/T-Test:
+The current manufacturing meets the design specifications of having a variance less than 100 psi
+ since the variance is 62.3 pounds per inch. The suspension coils appear to be pretty standard. Both the mean and median
+are approximately 1500, which is the same as the average population's. According to the t-test, there is a 95% confidence 
+interval, and the p-value is 0.057% which is above the common significance level of 0.05%, meaning that we cannot reject the 
+null hypothesis, so the two means are statistically similar.
+
+
+
+Design Your Own
+
+The most important factors to customers when comparing the MechaCar prototype to other available models are
+cost, fuel efficiency, mileage per year, and safety rating. We should ask how the mean of these factors compare to 
+the means of vehicles on the market. We can also perform a linear regression to see how cost changes in reaction to
+features like the ones stated above. The data that should be collected is how the protoype performs over a year in terms of
+safety in reaction to obstacles, how many miles the car can go based on how much fuel is filled, and the mileage per year.
